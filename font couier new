@@ -1,29 +1,31 @@
 /* Import OpenDyslexic with Fira Code Edit */
 
+/* Import OpenDyslexic */
+
 @font-face {
-    font-family: 'Fira Code', monospace;
-      src: url(https://fonts.gstatic.com/s/firacode/v12/uU9dCBsR6Z2vfE9aq3bpdva8iVtipIat--AvNZ-YI8zBrwQF.woff2) format('woff2');
+    font-family: 'OpenDyslexic';
+    src: url('https://discordstyles.github.io/discord-dyslexia/src/font/OpenDyslexic-Regular.woff');
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
-	font-family: 'Fira Code', monospace;
-	src: url(https://fonts.gstatic.com/s/firacode/v12/uU9dCBsR6Z2vfE9aq3bpdva8iVtipIat--AvNZ-YI8XBrwQF.woff2) format('woff2');	
+	font-family: 'OpenDyslexic';
+	src: url('https://discordstyles.github.io/discord-dyslexia/src/font/OpenDyslexic-Italic.woff');
 	font-style: italic;
 	font-weight: normal;
 }
 
 @font-face {
-	font-family: 'Fira Code', monospace;
-	src: url('https://fonts.gstatic.com/s/firacode/v12/uU9dCBsR6Z2vfE9aq3bpdva8iVtipIat--AvNZ-YI83BrwQF.woff2) format('woff2');
+	font-family: 'OpenDyslexic';
+	src: url('https://discordstyles.github.io/discord-dyslexia/src/font/OpenDyslexic-Bold.woff');
 	font-weight: bold;
 	font-style: normal;
 } 
 
 @font-face {
-	font-family: 'Fira Code', monospace;
-	src: url('https://fonts.gstatic.com/s/firacode/v12/uU9dCBsR6Z2vfE9aq3bpdva8iVtipIat--AvNZ-YI83BrwQF.woff2) format('woff2'');
+	font-family: 'OpenDyslexic';
+	src: url('https://discordstyles.github.io/discord-dyslexia/src/font/OpenDyslexic-BoldItalic.woff');
 	font-weight: bold;
 	font-style: italic;
 }
@@ -48,6 +50,13 @@
 
 [class*="messageContent-" i] {
     line-height: var(--message-line-spacing, initial) !important;
+}
+
+/* Scale up timestamps & "Edited" text */
+
+[class*="group-spacing" i] [class*="timestamp"],
+[class*="messageContent-" i] time {
+    font-size: .9rem;
 }
 
 /* Scale up timestamps & "Edited" text */
